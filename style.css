@@ -7,19 +7,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    background:rgb(174, 174, 174);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-    transition: opacity 300ms ease;
-}
 
 .content {
     height: 100%;
@@ -28,18 +22,27 @@ a {
 
 /* Nav links */
 
-.nav-links{
-    
+.nav-items {
+    display: flex;  
+    background-color: rgb(127, 127, 127);
+    width: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 4vh;
 }
 
-.nav-link {
+.nav-links ul li {
     list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
 }
 
-.nav-link a {
+.nav-links ul li a {
     color: white;
+    text-decoration: none;
+    font-size: 15px;
 }
-
 
 /* Effecs */
 
@@ -50,7 +53,7 @@ i:hover {
 .hover-effect:after {
     content: "";
     position: absolute;
-    height: 3px;
+    height: 2px;
     background-color: black;
     width: 0;
     bottom: -3px;
